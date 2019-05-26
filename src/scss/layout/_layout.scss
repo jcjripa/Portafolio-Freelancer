@@ -1,0 +1,22 @@
+.l-container{
+    max-width: $max-width;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center{
+    text-align: center; 
+}
+ 
+.block-center{
+     margin-right: auto;
+     margin-left: auto;
+}
+ 
+.flex-center{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
