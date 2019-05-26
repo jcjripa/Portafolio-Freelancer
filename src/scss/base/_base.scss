@@ -1,3 +1,24 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin : 0;
+  font-family : $font-family;
+}
+
+
 html,
 body,
 p,
@@ -35,10 +56,6 @@ h6 {
   font-weight: normal;
 }
 
-ul {
-  list-style: none;
-}
-
 span{
   font-style: inherit;
   font-weight: inherit;
@@ -51,29 +68,7 @@ textarea {
   margin: 0;
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  min-width: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  text-size-adjust: 100%;
-}
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img,
-embed,
-iframe,
-object,
-video {
-  height: auto;
-  max-width: 100%;
-}
 
 audio {
   max-width: 100%;
@@ -109,7 +104,6 @@ section {
   display: block;
 }
 
-body,
 button,
 input,
 select,
@@ -129,8 +123,8 @@ pre{
 
 img{
   
-  height: auto;
   max-width: 100%;
+  vertical-align: baseline;
 }
 
 input[type="checkbox"],
