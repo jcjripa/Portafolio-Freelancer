@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<link rel="stylesheet" href="public/css/main.min.css">
-	<link rel="shortcut icon" href="public/media/favicon.png">
+	<title>Julio Cesar Rivera | Frontend Developer</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,700,900" rel="stylesheet" />
+	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="shortcut icon" href="/media/favicon.png">
 </head>
-<body>
 
+<body class="body" id="body">
+	<!-- Navigation init -->
+	<header class="header" id="header">
+		<div class="header-wrapper l-container">
+			<div class="header-brand">
+					<div class="header-brand-logo"><a href="#"><strong>JCRP</JR></strong></a></div>
+			</div>
+			<nav class="nav" id="nav">
+				<div class="nav-btns">
+					<button id="btnBurger" class="nav-btns-bars" data-target="nav-list"><i id="iconBurger"
+							class="fa fa-bars"></i></button>
+				</div>
+				<ul class="nav-list" id="nav-list">
+					<li class="nav-item"><a href="#banner" class="nav-link">Inicio</a></li>
+					<li class="nav-item"><a href="#sobremi" class="nav-link">Sobre Mí</a></li>
+					<li class="nav-item"><a href="#certificados" class="nav-link">Certificados</a></li>
+					<li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+					<li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<!-- End Navigation -->
+	<div class="wrapper" id="wrapper">
+		<!-- Banner init -->
+		<div id="banner" class="banner">
+			<div class="banner-wrapper l-container">
+				<div class="banner-particles"  id="particles-js"></div>
+				<div class="banner-content">
+					<h1 class="banner-content-tittle"><strong>VAMOS</strong> A<br><strong>CONSTRUIR</strong> ALGO<br><strong>GRANDE</strong> JUNTOS</h1>
+					<div class="banner-content-textAnimate"><a href="#">#Soy Programador</a> Web y Móvil . Hago que la aplicación visual para web y móvil sea más interactiva</div>
+					<div class="banner-content-icons">
+						<a class="banner-content-icons-link" href="#"><i class="fab fa-facebook-f"></i></a>
+						<a class="banner-content-icons-link" href="#"><i class="fab fa-twitter"></i></a>
+						<a class="banner-content-icons-link" href="#"><i class="fab fa-instagram"></i></a>
+						<a class="banner-content-icons-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a class="banner-content-icons-link" href="#"><i class="fab fa-github"></i></a>
+						<a class="banner-content-icons-link" href="#"><i class="fab fa-gitlab"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Banner end -->
+		<!-- About init -->
+		<div id="sobremi" class="sobremi" style="height: 50rem;">
+			<h1>Sobre mi</h1>
+		</div>
+		<div id="certificados" class="certificados" style="height: 50rem;">
+			<h1>certificados</h1>
+		</div>
+		<div id="proyectos" class="proyectos" style="height: 50rem;">
+			<h1>proyectos</h1>
+		</div>
+		<div id="contacto" class="contacto" style="height: 50rem;">
+			<h1>contacto</h1>
+		</div>
+
+
+		<!-- About end -->
+
+	</div>
+	<script src="/js/main.min.js"></script>
 </body>
+
 </html>

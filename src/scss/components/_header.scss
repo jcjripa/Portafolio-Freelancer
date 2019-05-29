@@ -1,0 +1,42 @@
+.header{
+  width: 100%;
+  height: $header-height;
+  position: fixed;
+  transition: all .5s;
+  z-index: $z-fixed;
+  color: white;
+
+  &--active{
+    background: white;
+    box-shadow: 0 0 .5em #444;
+    color: black;
+  }
+
+  &-wrapper{
+    width: 100%;
+    height: 100%;
+
+    @include from(desktop){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+  &-brand{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+
+
+    &-logo{
+      color: inherit;
+      border: 3px solid white;
+      padding: .3em;
+      font-size: 1.5rem;
+      border-radius: 10px;
+    }
+
+  }
+
+}

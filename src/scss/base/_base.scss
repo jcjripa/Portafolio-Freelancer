@@ -10,7 +10,6 @@ html {
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
   text-size-adjust: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -91,6 +90,7 @@ th {
 
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 article,
@@ -100,7 +100,7 @@ footer,
 header,
 hgroup,
 section {
-  
+
   display: block;
 }
 
@@ -115,14 +115,14 @@ textarea{
 
 code,
 pre{
-  
+
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
   font-family: $family-code;
 }
 
 img{
-  
+
   max-width: 100%;
   vertical-align: baseline;
 }

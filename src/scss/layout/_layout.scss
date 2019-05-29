@@ -1,4 +1,4 @@
-.l-container{
+.l-container {
     max-width: $max-width;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -6,17 +6,34 @@
     margin-left: auto;
 }
 
-.text-center{
-    text-align: center; 
+.body {
+
+
+
+    &--active {
+        overflow: hidden;
+    }
+
 }
- 
-.block-center{
-     margin-right: auto;
-     margin-left: auto;
+
+.wrapper {
+    &--active {
+
+        filter: blur(4px);
+    }
 }
- 
-.flex-center{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+
+.text-center {
+    text-align: center;
+}
+
+.block-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

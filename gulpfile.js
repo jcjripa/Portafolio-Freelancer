@@ -8,10 +8,9 @@
           uglify = require('gulp-uglify-es').default,
           rename = require('gulp-rename'),
           cleanCSS = require('gulp-clean-css'),
-          del = require('del'),
-          babel = require('gulp-babel')
-      
-    
+          del = require('del')
+
+
     let paths = {
 
       data:{
@@ -70,14 +69,11 @@
     }
     function scripts() {
       return gulp.src(paths.scripts.src, { sourcemaps: true })
-        .pipe(babel({
-          presets: ['@babel/env']
-        }))
         .pipe(uglify())
         .pipe(concat('main.min.js'))
         .pipe(gulp.dest(paths.scripts.dest));
     }
-    
+
     function watch() {
       browserSync.init({
         server: {
@@ -91,7 +87,7 @@
       gulp.watch(paths.data.src, data);
       gulp.watch([paths.pages.dest,paths.data.dest, paths.scripts.dest, paths.scss.dest, paths.media.dest]).on('change',browserSync.reload);
     }
-    
+
    exports.clean = clean;
    exports.pages = pages;
    exports.scss = scss;
@@ -99,7 +95,7 @@
    exports.scripts = scripts;
    exports.watch = watch;
    exports.data = data;
-  
-  
+
+
   var build = gulp.series(clean, gulp.parallel(pages,data,scss,images, scripts,watch));
   gulp.task('default',build);
