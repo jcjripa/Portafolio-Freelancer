@@ -1,7 +1,7 @@
 .nav {
+  width: 100%;
   height: 100%;
   position: relative;
-
   &-btns {
     margin-right: .8rem;
     margin-bottom: .8rem;
@@ -16,43 +16,52 @@
 
     &-bars {
       color: white;
-      width: 3.5rem;
-      height: 3.5rem;
-      font-size: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      border: 2px solid;
+      outline: 0;
       background-color: transparent;
-      border: 3px solid white;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 10px;
+      transition: color .2s;
+
+      &.active{
+        border: none;
+        color: white;
+      }
+
     }
   }
 
   &-list {
-    background: white;
     position: fixed;
     z-index: $z-tooltip;
     top: 0;
     right: 0;
+    bottom: 0;
     list-style: none;
     height: 100vh;
     width: 95vw;
+    // border-radius: 10px 0 0 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     transform: translateX(95vw);
     opacity: 0;
-    background: #000046;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1CB5E0, #000046);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    color: white;
+
+    color: inherit;
     transition: all .5s;
-
+    @include from(phablet){
+      align-items: center;
+    }
 
     @include from(desktop) {
       background: initial;
@@ -65,7 +74,6 @@
       align-items: center;
       transform: translateX(0);
       opacity: 1;
-      color: black;
     }
 
 
@@ -91,15 +99,34 @@
     font-size: 24px;
     text-transform: uppercase;
     font-weight: $weight-bold;
+    transition: border-bottom 1s;
+    color: white;
 
-
-    &--active{
-      color: green;
-    }
     @include from(desktop) {
-      font-size: 1.1rem;
-      font-weight: $weight-normal;
+      font-size: 1rem;
+      font-weight: $weight-medium;
       text-transform: initial;
+      position: relative;
+
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        transform: scale(0);
+        transform-origin: left;
+        transition: transform .5s;
+      }
+      &:hover:after{
+        transform: scale(1);
+
+      }
+      &.active::after{
+        transform: scale(1);
+      }
+
     }
   }
 }

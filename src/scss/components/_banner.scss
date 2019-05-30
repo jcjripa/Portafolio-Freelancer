@@ -1,9 +1,25 @@
 .banner {
   height: 100vh;
   width: 100%;
-  background: #00416A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+ background-blend-mode: screen;
+
+  @include from(desktop){
+    background: url('/media/banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    opacity: .7;
+  }
 
 
 
@@ -23,13 +39,15 @@
     width: 100%;
     height: 100%;
     z-index: $z-normal;
+
+
   }
 
   &-content {
     position: relative;
     z-index: $z-tooltip;
     text-align: center;
-
+    color: white;
 
     @include from(desktop){
       margin-right: 10rem;
@@ -39,17 +57,44 @@
     &-tittle {
       margin: 1rem 0;
       font-size: 2rem;
+      animation: fadeIn 1s both;
+
+      & span{
+        color: #0072ff;
+        font-weight: $weight-bold;
+
+        @include from(desktop){
+          color: white;
+        }
+      }
+
+      @include from(tablet){
+        margin: 2rem 0;
+        font-size: 3rem;
+      }
     }
 
     &-textAnimate {
       margin: 1rem 0;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: $weight-medium;
+      animation: fadeIn 1s 1s both ;
+
+      @include from(tablet){
+        margin: 2rem 0;
+        font-size: 1.8rem;
+      }
     }
 
     &-icons {
       margin: 1rem 0;
+      animation: fadeIn 1s 2s both;
 
+      & ul{
+        display: inline-block;
+        cursor: pointer;
+        height: 100%;
+      }
       &-link{
         width: 2rem;
         height: 2rem;
@@ -60,7 +105,24 @@
         color: white;
         background-color: rgba(0, 0, 0, 0.3);
         font-size: 1.1rem;
+        margin: 0 .2rem;
+        transition: background-color .2s;
+
+        &:hover{
+          background-color: rgba(0, 0, 0, 1);
+        }
       }
     }
+  }
+
+  &-arrow{
+    position: absolute;
+    z-index: $z-normal;
+    color: white;
+    bottom: 2rem;
+    font-size: 2rem;
+    opacity: 0;
+    animation: arrowAnimate 2s 3s both infinite ease-in-out;
+
   }
 }
