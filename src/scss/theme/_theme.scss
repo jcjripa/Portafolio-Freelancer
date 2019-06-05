@@ -1,1 +1,91 @@
 $header-height:5rem;
+
+
+.tittle{
+    font-size: 2em;
+    position: relative;
+    color: #444444;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+
+
+    &--dark{
+        font-size: 2em;
+        position: relative;
+        color: #444444;
+        text-align: center;
+        margin-bottom: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        color: white;
+
+        &:after,&:before{
+            content: " ";
+            position: absolute;
+            border-style: solid;
+            border-color:$light;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: $z-normal;
+        }
+        &:after{
+            width: 200px;
+            bottom: 0;
+            border-width: 1px 0 0 0;
+
+        }
+        &:before{
+            border-width: 1px 0;
+            bottom: -5px;
+            width: 100px;
+            padding: 4px 0 5px;
+            opacity: 0.67;
+        }
+    }
+    &:after,&:before{
+        content: " ";
+        position: absolute;
+        border-style: solid;
+        border-color: #303030;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: $z-normal;
+    }
+    &:after{
+        width: 200px;
+        bottom: 0;
+        border-width: 1px 0 0 0;
+
+    }
+    &:before{
+        border-width: 1px 0;
+        bottom: -5px;
+        width: 100px;
+        padding: 4px 0 5px;
+        opacity: 0.67;
+    }
+
+
+
+}
+
+.text{
+    text-align: center;
+    font-size: .93rem;
+
+    @include from(desktop){
+        padding: 0 5rem;
+        font-size: 1rem;
+    }
+
+
+    & p{
+
+    }
+}

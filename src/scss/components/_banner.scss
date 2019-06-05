@@ -1,8 +1,8 @@
 .banner {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
- background-blend-mode: screen;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
 
   @include from(desktop){
     background: url('/media/banner.jpg');
@@ -18,7 +18,11 @@
     width: 100%;
     height: 100vh;
     background: #000000;
-    opacity: .7;
+    opacity: .2;
+
+    @include from(desktop){
+      opacity: .7;
+    }
   }
 
 
@@ -82,7 +86,7 @@
 
       @include from(tablet){
         margin: 2rem 0;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
 
@@ -107,9 +111,13 @@
         font-size: 1.1rem;
         margin: 0 .2rem;
         transition: background-color .2s;
+        transition: transform .3s;
+
+
 
         &:hover{
           background-color: rgba(0, 0, 0, 1);
+          transform: scale(1.5);
         }
       }
     }

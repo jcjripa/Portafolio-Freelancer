@@ -1,0 +1,36 @@
+.btn{
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    outline: 0;
+    border: 2px solid #1c1c1c;
+    font-weight: $weight-bold;
+
+    &-link{
+        display: block;
+        color: inherit;
+        padding: .5rem 1rem;
+    }
+
+}
+
+.is-dark{
+    color: white;
+    background-color: #1c1c1c;
+    transition: background-color .5s;
+
+    &:hover{
+        color: #1c1c1c;
+        background-color: white;
+    }
+}
+.is-light{
+    color: #1c1c1c;
+    background-color: white;
+    transition: background-color .5s;
+
+    &:hover{
+        color: white;
+        background-color: #1c1c1c;
+    }
+}

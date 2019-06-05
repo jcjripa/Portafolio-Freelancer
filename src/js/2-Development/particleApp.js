@@ -29,7 +29,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": .6,
+        "value": .5,
         "random": false,
         "anim": {
           "enable": false,

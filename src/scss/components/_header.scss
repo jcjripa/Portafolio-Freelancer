@@ -12,12 +12,16 @@
   &--active{
     background-color: white;
     color: #444444;
-
-    & .nav-link:after{
-      background: #444444;
+    box-shadow: 0 0 .2rem #444444;
+    @include from(desktop){
+      & .nav-link:after{
+        background: #444444;
+      }
     }
+
     & .nav-btns-bars{
-      color: #505151;
+      color: #444444;
+      background: white;
     }
     @include from(desktop){
       & .nav-link{
@@ -30,6 +34,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
 
 
     @include from(desktop){
@@ -41,8 +46,16 @@
   }
   &-brand{
     display: inline-flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
+
+    @include from(desktop){
+      width: auto;
+    }
+
+
 
     &-logo{
 
@@ -50,6 +63,23 @@
       border: 4px solid;
       padding: .2rem .7rem;
       font-size: 1.5rem;
+      &.active{
+        filter: blur(7px);
+
+      }
+    }
+
+    &-name{
+
+
+      & span{
+        display: block;
+      }
+
+
+      @include from(desktop){
+        display: none;
+      }
     }
 
   }

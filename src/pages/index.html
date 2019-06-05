@@ -1,36 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: http://ogp.me/ns#">
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="title" content="Programador Web y Desarrollador de Apps Móviles | Web and Mobile Developer" />
+	<meta name="description" content="Programador Web y Desarrollador de Apps Móviles" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 	<title>Julio Cesar Rivera | Frontend Developer</title>
+
+	<!-- Links -->
+	<link rel="shortcut icon" href="/media/favicon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,500,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.min.css">
-	<link rel="shortcut icon" href="/media/favicon.png">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Julio Cesar Rivera" />
+	<meta property="og:description"
+		content="Programador Web y Desarrollador de Apps Móviles | Web and Mobile Developer" />
+	<meta property="og:url" content="https://www.juliorivera.dev" />
+	<meta property="og:type" content="Portafolio" />
+	<meta property="og:locale" content="es_PE" />
+	<meta property="og:site_name" content="Julio Cesar Rivera - Web and Mobile Developer" />
+	<meta property="og:image" content="https://juliorivera.dev/media/opengraph.jpg" />
+	<meta property="og:image:alt" content="Imagen de Programador Frontend / Mobile" />
+	<meta property="og:image:secure_url" content="https://juliorivera.dev" />
+	<!-- fin de Open Grapgh -->
+
+	<!-- Twitter -->
+	<meta name="twitter:image" content="https://juliorivera.dev/media/opengraph.jpg" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content="Julio Cesar Rivera" />
+	<meta property="twitter:site" content="@jcjrivera" class="next-head" />
+	<meta property="twitter:description"
+		content="Programador Web y Desarrollador de Apps Móviles | Web and Mobile Developer" />
 </head>
 
 <body class="body" id="body">
+
 	<!-- Navigation init -->
 	<header class="header" id="header">
 		<div class="header-wrapper l-container">
 			<div class="header-brand">
-				<div class="header-brand-logo"><a href="#"><strong>JCRP</JR></strong></a></div>
+				<div id="logo" class="header-brand-logo"><a href="#"><strong>JCRP</JR></strong></a></div>
+				<h1 class="header-brand-name">
+					<span>CESAR <strong>RIVERA</strong></span>
+					<span><strong>FRONTEND</strong> JR</span>
+
+				</h1>
 			</div>
 			<nav class="nav" id="nav">
 				<div class="nav-btns">
 					<button id="btnBurger" class="nav-btns-bars" data-target="nav-list"><i id="iconBurger"
 							class="fa fa-bars"></i></button>
+
 				</div>
 				<ul class="nav-list" id="nav-list">
 					<li class="nav-item"><a href="#wrapper" class="nav-link" id="wrapper-link">Inicio</a></li>
-					<li class="nav-item"><a href="#sobremi" class="nav-link" id="link-1">Sobre Mí</a></li>
-					<li class="nav-item"><a href="#certificados" class="nav-link" id="link-2">Certificados</a></li>
-					<li class="nav-item"><a href="#proyectos" class="nav-link" id="link-3">Proyectos</a></li>
-					<li class="nav-item"><a href="#contacto" class="nav-link" id="link-4">Contacto</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link" id="link-1">Sobre mí</a></li>
+					<li class="nav-item"><a href="#services" class="nav-link" id="link-2">Servicios</a></li>
+					<li class="nav-item"><a href="#works" class="nav-link" id="link-3">Proyectos</a></li>
+					<li class="nav-item"><a href="#prices" class="nav-link" id="link-4">Precios</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link" id="link-5">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -38,53 +72,475 @@
 
 
 	<!-- End Navigation -->
-	<main class="wrapper" id="wrapper">
+	<div class="wrapper" id="wrapper">
 		<!-- Banner init -->
 		<section id="banner" class="banner">
 			<div class="banner-wrapper l-container">
 				<div class="banner-particles" id="particles-js"></div>
 				<div class="banner-content">
-					<h1 class="banner-content-tittle"><span>VAMOS</span> A<br><span>CONSTRUIR</span>
-						ALGO<br><span>GRANDE</span> JUNTOS</h1>
-					<div class="banner-content-textAnimate"><a href="#">#Soy Programador</a> Web y Móvil . Hago que la aplicación
+					<div class="banner-content-tittle"><span>VAMOS</span> A<br><span>CONSTRUIR</span>
+						ALGO<br><span>GRANDE</span> JUNTOS</div>
+					<div class="banner-content-textAnimate">Soy Programador Web y Móvil . Hago que la aplicación
 						visual para web y móvil sea más interactiva</div>
 					<div class="banner-content-icons">
 						<ul>
-							<a class="banner-content-icons-link" href="#"><i class="fab fa-facebook-f"></i></a>
-							<a class="banner-content-icons-link" href="#"><i class="fab fa-twitter"></i></a>
-							<a class="banner-content-icons-link" href="#"><i class="fab fa-instagram"></i></a>
-							<a class="banner-content-icons-link" href="#"><i class="fab fa-linkedin-in"></i></a>
-							<a class="banner-content-icons-link" href="#"><i class="fab fa-github"></i></a>
-							<a class="banner-content-icons-link" href="#"><i class="fab fa-gitlab"></i></a>
+							<a class="banner-content-icons-link" href="https://www.facebook.com/juliocesar.rivera.528"
+								target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a class="banner-content-icons-link" href="https://twitter.com/jcjrivera?lang=es" target="_blank"><i
+									class="fab fa-twitter"></i></a>
+							<a class="banner-content-icons-link" href="https://www.instagram.com/jcjrivera/?hl=es-la"
+								target="_blank"><i class="fab fa-instagram"></i></a>
+							<a class="banner-content-icons-link"
+								href="https://www.linkedin.com/in/julio-cesar-rivera-pacaya-b41b5b17a/" target="_blank"><i
+									class="fab fa-linkedin-in"></i></a>
+							<a class="banner-content-icons-link" href="https://github.com/jcjripa" target="_blank"><i
+									class="fab fa-github"></i></a>
+							<a class="banner-content-icons-link" href="https://gitlab.com/jcjriverapacaya?nav_source=navbar"
+								target="_blank"><i class="fab fa-gitlab"></i></a>
 						</ul>
 					</div>
 				</div>
 				<div class="banner-arrow">
-					<a class="banner-arrow-link" href="#sobremi"><i class="fas fa-chevron-down"></i></a>
+					<a class="banner-arrow-link" href="#about"><i class="fas fa-chevron-down"></i></a>
 				</div>
 			</div>
 		</section>
 		<!-- Banner end -->
-		<!-- About init -->
-		<section id="sobremi" class="sobremi" style="height: 100rem;">
-			<div class="sobremi-wrapper l-container">
 
+		<!-- About -->
+		<section class="about" id="about">
+			<div class="about-main l-container">
+				<h2 class="tittle">Sobre mí</h2>
+				<div class="about-content">
+					<div class="about-s1">
+						<figure class="about-s1-figure">
+							<img class="about-s1-img" src="/media/hero.jpg" alt="Foto de Larry Daniels" />
+						</figure>
+					</div>
+					<div class="about-s2">
+						<h3 class="about-s2-subtittle">
+							LAYOUT MASTER & FRONTEND DEVELOPER
+						</h3>
+						<div class="about-s2-text">
+							<p>
+								Hola mi nombre es <strong>Julio Cesar Rivera </strong> estoy ubicado en ciudad de Lima,Perú. Desde 2018
+								tengo experiencia profesional en el área de la programación y el desarrollo web. Me gusta trabajar con
+								lo último en <b>Tendencia</b>, y me capacito todo el tiempo para mantenerme actualizado. Me apasiona
+								desarrollar Webs y Aplicaciones Dinámicas , con buenas prácticas para poder darle un correcto
+								mantenimiento y se pueda escalar a un proyecto más grande a futuro , y Trabajo bajo el pensamiento de
+								"Menos es Mas".
+							</p>
+						</div>
+						<div class="about-s2-skills">
+							<div class="box">
+								<h4>HTML5 ( EMMET / BEM )</h4>
+								<div class="box-bar" id="bar1">95%</div>
+							</div>
+							<div class="box">
+								<h4>CSS3 ( GRID / SASS / ANIMACIONES )</h4>
+								<div class="box-bar" id="bar2">95%</div>
+							</div>
+							<div class="box">
+								<h4>JAVASCRIPT</h4>
+								<div class="box-bar" id="bar3">70%</div>
+							</div>
+							<div class="box">
+								<h4>GIT / GIT HUB / GIT LAB</h4>
+								<div class="box-bar" id="bar4">90%</div>
+							</div>
+							<div class="box">
+								<h4>BOOTSTRAP / BULMA</h4>
+								<div class="box-bar" id="bar5">80%</div>
+							</div>
+						</div>
+						<div class="about-s2-buttons">
+							<button class="btn is-dark">
+								<a class="btn-link" href="/data/cv.pdf" download>Descargar CV</a>
+							</button>
+							<button class="btn is-light">
+								<a class="btn-link" href="https://api.whatsapp.com/send?phone=51964650338" target="_blank">Hablemos</a>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section id="certificados" class="certificados" style="height: 100rem;">
-			<h1>certificados</h1>
+
+		<!-- Fin de About -->
+		<!-- Services -->
+		<section class="services" id="services">
+			<div class="services-wrapper l-container">
+				<h2 class="tittle--dark">Servicios</h2>
+				<div class="services-grid">
+					<div class="services-grid-item">
+						<div class="services-grid-icon"><i class="fas fa-laptop"></i></div>
+						<h4 class="services-grid-tittle">Webs Administrables</h4>
+						<div class="services-grid-text">
+							<p>
+								Webs de última generación que cumple los estándares de Diseño Responsive en Smartphones y Tablets
+							</p>
+						</div>
+					</div>
+					<div class="services-grid-item">
+						<div class="services-grid-icon">
+							<i class="far fa-object-group "></i>
+						</div>
+						<h4 class="services-grid-tittle">Aulas Virtuales</h4>
+						<div class="services-grid-text">
+							<p>
+								Clases, Cursos o Seminarios a estudiantes de cualquier lugar del mundo en cualquier momento, durante
+                las 24 Horas del Día
+							</p>
+						</div>
+					</div>
+					<div class="services-grid-item">
+						<div class="services-grid-icon">
+							<i class="fas fa-store"></i>
+						</div>
+						<h4 class="services-grid-tittle">Tiendas Virtuales</h4>
+						<div class="services-grid-text">
+							<p>
+								Las Tiendas Virtuales (e-commerce) abren un mundo de posibilidades al profesional o empresario que anda
+                buscando maneras de usar la internet y tecnologías web para incrementar ingresos.
+							</p>
+						</div>
+					</div>
+					<div class="services-grid-item">
+						<div class="services-grid-icon"><i class="fas fa-window-maximize"></i></div>
+						<h4 class="services-grid-tittle">Webs Básicas</h4>
+						<div class="services-grid-text">
+							<p>
+								Las Webs Básicas que desarrollo son totalmente personalizadas y validadas en W3C con los mejores
+                estándares a nivel mundial.
+							</p>
+						</div>
+					</div>
+					<div class="services-grid-item">
+						<div class="services-grid-icon"><i class="fas fa-file-code"></i></div>
+						<h4 class="services-grid-tittle">Posicionamiento Web SEO</h4>
+						<div class="services-grid-text">
+							<p>
+								Una amplia mayoría de personas cree que al Diseñar y publicar su Sitio o Página Web automáticamente
+                ocupará los primeros lugares del Buscador de Google, este pensamiento esta muy lejos de la realidad.
+							</p>
+						</div>
+					</div>
+					<div class="services-grid-item">
+						<div class="services-grid-icon"><i class="fas fa-server"></i></div>
+						<h4 class="services-grid-tittle">Hosting y Dominio</h4>
+						<div class="services-grid-text">
+							<p>
+								Nuestros Hosting están optimizados para garantizar un rendimiento eficaz con alto tráfico de visitantes,
+								Contamos con tecnología SSD (Discos Sólidos) de alto rendimiento en todos nuestros planes
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="proyectos" class="proyectos" style="height: 100rem;">
-			<h1>proyectos</h1>
+		<!-- Fin de Services -->
+		<!-- Works -->
+		<section class="works" id="works">
+			<div class="works-wrapper l-container">
+				<h2 class="tittle">Proyectos</h2>
+				<div class="works-grid">
+					<div class="works-item">
+						<div class="works-background item-1">
+							<img src="/media/1.png" alt="web 1">
+						</div>
+						<div class="works-overlay">
+							<h4 class="works-overlay-tittle">Landing Page</h4>
+							<div class="works-overlay-icons">
+								<a href="https://juliocesarrivera.com" target="_blank"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="works-item">
+						<div class="works-background item-2">
+							<img src="/media/2.png" alt="web 2">
+						</div>
+						<div class="works-overlay">
+							<h4 class="works-overlay-tittle">Landing Page</h4>
+							<div class="works-overlay-icons">
+								<a href="https://portafolio-2.web.app/" target="_blank"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="works-item">
+						<div class="works-background item-3">
+							<img src="/media/3.png" alt="web 3">
+						</div>
+						<div class="works-overlay">
+							<h4 class="works-overlay-tittle">E-Commerce</h4>
+							<div class="works-overlay-icons">
+								<a href="https://us.akris.com/" target="_blank"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="works-item">
+						<div class="works-background item-4">
+							<img src="/media/4.png" alt="web 4">
+						</div>
+						<div class="works-overlay">
+							<h4 class="works-overlay-tittle">Landing Page</h4>
+							<div class="works-overlay-icons">
+								<a href="https://www.lechomat.com/en/" target="_blank"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="works-item">
+						<div class="works-background item-5">
+							<img src="/media/5.png" alt="web 5">
+						</div>
+						<div class="works-overlay">
+							<h4 class="works-overlay-tittle">Landing Page</h4>
+							<div class="works-overlay-icons">
+								<a href="https://casacook.com/" target="_blank"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="works-item">
+						<div class="works-background item-6">
+							<img src="/media/6.png" alt="web 6">
+						</div>
+						<div class="works-overlay">
+							<h4 class="works-overlay-tittle">E-Commerce</h4>
+							<div class="works-overlay-icons">
+								<a href="https://www.protest.eu/" target="_blank"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="contacto" class="contacto" style="height: 100rem;">
-			<h1>contacto</h1>
+		<!-- Fin de Works -->
+		<!-- Brands -->
+		<div class="counter" id="counter">
+			<div class="counter-wrapper l-container">
+				<div class="counter-item">
+					<i class="far fa-smile-wink"></i><span>400</span>
+					<p>Clientes Felices</p>
+				</div>
+				<div class="counter-item">
+					<i class="fas fa-code"></i><span>98k</span>
+					<p>Líneas de código</p>
+				</div>
+				<div class="counter-item">
+					<i class="fas fa-coffee"></i><span>1500</span>
+					<p>Tasas de café</p>
+				</div>
+			</div>
+		</div>
+		<!-- Fin de Brands -->
+		<!-- PRECIOS -->
+		<section class="prices" id="prices">
+			<div class="prices-wrapper l-container">
+				<h3 class="tittle">PRECIOS</h3>
+				<div class="text"><p>Los precios son relativos para obtener una cotización exacta comunicarse conmigo directamente para poder recibir sus requerimientos y porder brindarle una cotización más acertada .</p></div>
+				<div class="prices-content">
+					<div class="prices-content-item">
+						<div class="prices-content-item-s1 flex-center">
+							<h4><strong>WEB BASIC - LANDING PAGE</strong></h4>
+						</div>
+						<div class="prices-content-item-s2">
+							<p>Desde</p>
+							<h5>$250</h5>
+						</div>
+						<div class="prices-content-item-s3 flex-center">
+							<ul>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>1 <strong>Página </strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>6 <strong>Secciones</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>100% <strong>Responsive</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>Validado en <strong>W3C</strong></p>
+								</li>
+							</ul>
+						</div>
+						<div class="prices-content-item-s4 flex-center">
+							<button class="btn is-light"><a class="btn-link" href="https://api.whatsapp.com/send?phone=51964650338" target="_blank">CONTRATAME</a></button>
+						</div>
+					</div>
+
+					<div class="prices-content-item">
+						<div class="prices-content-item-s1 flex-center">
+							<h4><strong>WEB MULTIPAGE</strong></h4>
+						</div>
+						<div class="prices-content-item-s2">
+							<p>Desde</p>
+							<h5>$380</h5>
+						</div>
+						<div class="prices-content-item-s3 flex-center">
+							<ul>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>6 <strong>Páginas </strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>CMS <strong>WORDPRESS</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>100% <strong>Responsive</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>Validado en <strong>W3C</strong></p>
+								</li>
+							</ul>
+						</div>
+						<div class="prices-content-item-s4 flex-center">
+							<button class="btn is-light"><a class="btn-link" href="https://api.whatsapp.com/send?phone=51964650338" target="_blank">CONTRATAME</a></button>
+						</div>
+					</div>
+					<div class="prices-content-item">
+						<div class="prices-content-item-s1 flex-center">
+							<h4><strong>WEB E-COMMERCE</strong></h4>
+						</div>
+						<div class="prices-content-item-s2">
+							<p>Desde</p>
+							<h5>$550</h5>
+						</div>
+						<div class="prices-content-item-s3 flex-center">
+							<ul>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>Tienda <strong>Virtual </strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>CMS <strong>WORDPRESS</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>100% <strong>Responsive</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>Pagos <strong>Informativos</strong></p>
+								</li>
+							</ul>
+						</div>
+						<div class="prices-content-item-s4 flex-center">
+							<button class="btn is-light"><a class="btn-link" href="https://api.whatsapp.com/send?phone=51964650338" target="_blank">CONTRATAME</a></button>
+						</div>
+					</div>
+					<div class="prices-content-item">
+						<div class="prices-content-item-s1 flex-center">
+							<h4><strong>WEB E-COMMERCE PRO </strong></h4>
+						</div>
+						<div class="prices-content-item-s2">
+							<p>Desde</p>
+							<h5>$999</h5>
+						</div>
+						<div class="prices-content-item-s3 flex-center">
+							<ul>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>Tienda <strong>Virtual </strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>CMS <strong>WORDPRESS</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>100% <strong>Responsive</strong></p>
+								</li>
+								<li class="prices-content-item-s3-item flex-center">
+									<p>Pagos <strong>Visa , Mastercard , Etc</strong></p>
+								</li>
+							</ul>
+						</div>
+						<div class="prices-content-item-s4 flex-center">
+							<button class="btn is-light"><a class="btn-link" href="https://api.whatsapp.com/send?phone=51964650338" target="_blank">CONTRATAME</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Fin de Precios -->
+		<!-- Testimonios -->
+		<section class="clients" id="clients">
+			<div class="clients-wrapper">
+				<h2 class="tittle--dark">Clientes</h2>
+				<div class="clients-feedback">
+					<div class="clients-feedback-item">
+						<div class="clients-feedback-item-wrapper">
+							<img src="/media/perfil1.jpg" alt="">
+							<p>Great work and very professional, he followed the description in detail and made perfect changes
+								according to the feedback I gave him. I’m working with him again because he did a great job.</p>
+							<p><b>Fabian Farrey</b></p>
+						</div>
+					</div>
+					<div class="clients-feedback-item">
+						<div class="clients-feedback-item-wrapper">
+							<img src="/media/perfil2.jpg" alt="">
+							<p>Excelente trabajo, muy profesional. De seguro seguiremos trabajando juntos.</p>
+							<p><b>Diego Cueva</b></p>
+						</div>
+					</div>
+					<div class="clients-feedback-item">
+						<div class="clients-feedback-item-wrapper">
+							<img src="/media/perfil3.jpg" alt="">
+							<p>Gran trabajo, siguió los requerimientos a detalle e hizo cambios perfectos de acuerdo con los
+								comentarios que le di. Estoy trabajando con él otra vez porque hizo un gran trabajo.</p>
+							<p><b>Juan Maldonado</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fin de Testimonios -->
+		<!-- Contact -->
+		<section class="contact" id="contact">
+			<div class="contact-wrapper l-container">
+				<h2 class="tittle">Contacto</h2>
+				<address class="contact-info">
+					<div class="contact-item">
+						<i class="contact-icon fas fa-location-arrow"></i>
+						<h5 class="contact-tittle">Dirección</h5>
+						<p class="contact-text">Jr. Morro de Arica 595</p>
+					</div>
+					<div class="contact-item">
+						<i class="contact-icon fas fa-envelope"></i>
+						<h5 class="contact-tittle">Email</h5>
+						<p class="contact-text">jcjriverapacaya@gmail.com</p>
+					</div>
+					<div class="contact-item">
+						<i class="contact-icon fas fa-phone-volume"></i>
+						<h5 class="contact-tittle">Celular</h5>
+						<p class="contact-text">+51 964 650 338</p>
+					</div>
+				</address>
+				<form class="contact-form" action="#">
+					<div class="contact-form-s1">
+						<div><input type="text" name="" id="" placeholder="Nombre" required></div>
+						<div><input type="email" name="" id="" placeholder="Email" required></div>
+					</div>
+					<div class="contact-form-s2">
+						<textarea name="" id="" cols="100" rows="9" placeholder="Mensaje" required></textarea>
+					</div>
+					<div class="contact-form-s3">
+						<input class="btn is-dark" type="submit" value="Enviar">
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- Fin de Contact -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<iframe class="footer-map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.0653458920945!2d-77.01944817076992!3d-11.886878687126925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDUzJzEyLjgiUyA3N8KwMDEnMDguMCJX!5e0!3m2!1ses!2spe!4v1554692937206!5m2!1ses!2spe"
+				width="1920" height="600" style="border:0" allowfullscreen></iframe>
+			<div class="footer-content">
+				<p>Copyright © 2019 Julio Cesar Rivera , Todos los derechos reservados.</p>
+			</div>
+		</footer>
+		<!-- Fin de Footer -->
+		<!-- BACKTOTOP -->
+		<section class="backtotop" id="backtotop">
+			<a href="#banner" class="btn--default"><i class="fas fa-angle-up"></i></a>
 		</section>
 
 
-		<!-- About end -->
-
-	</main>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/js/main.min.js"></script>
 </body>

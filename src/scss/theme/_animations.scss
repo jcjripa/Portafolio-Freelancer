@@ -14,3 +14,46 @@
     opacity: 1;
   }
 }
+
+@keyframes animateBar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slider {
+
+  0%,
+  20%,
+  100% {
+    transform: translateX(0%);
+  }
+
+  25%,
+  45%,
+  75%,
+  95% {
+    transform: translateX(-100%);
+  }
+
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes preloaderBouncer {
+  0%, 100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+  }
+
+  50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+  }
+}
