@@ -113,11 +113,15 @@
         transition: background-color .2s;
         transition: transform .3s;
 
+        @include from(desktop){
+          width: 2.5rem;
+          height: 2.5rem;
+        }
 
 
         &:hover{
           background-color: rgba(0, 0, 0, 1);
-          transform: scale(1.5);
+          transform: scale(1.2);
         }
       }
     }
