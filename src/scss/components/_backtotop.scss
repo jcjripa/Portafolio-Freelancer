@@ -1,46 +1,23 @@
-.backtotop{
-
-  @include from(desktop){
-    display: none;
+.backtotop {
+  display: none;
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 1.5rem;
+  bottom: 1.5rem;
   opacity: 1;
   transition: opacity .25s ease-in-out;
   z-index: $z-fixed;
-  color: black;
-  border: 2px solid black;
+
+  & i{
+    font-size: 2rem;
   }
 
 
-  & a{
+
+  &--active {
 
     @include from(desktop){
-      min-width: 50px;
-      padding: 6px 0 8px;
-      background-color:#e4e4e4;
-      font-size: 32px;
-      line-height: 0;
-      text-align: center;
-    }
-
-  }
-
-  & .btn--default {
-
-    @include from(desktop){
-      display: inline-block;
-      color: inherit;
-      border: 2px solid transparent;
-      border-radius: 0;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-  }
-
-
-  &--active{
       display: block;
+    }
+
   }
 }

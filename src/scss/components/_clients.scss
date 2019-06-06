@@ -24,7 +24,7 @@
 
 
   &-wrapper {
-    overflow-x: hidden;
+    overflow: hidden;
     max-width: $max-width;
     margin: 0 auto;
     position: relative;
@@ -75,7 +75,10 @@
         }
 
         & p {
-          margin: 1.5rem;
+          margin: 1rem;
+          @include from(desktop){
+            margin: 1.5rem;
+          }
         }
 
       }

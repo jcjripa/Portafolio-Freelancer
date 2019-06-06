@@ -5,6 +5,7 @@
     outline: 0;
     border: 2px solid #1c1c1c;
     font-weight: $weight-bold;
+    background: white;
 
     &-link{
         display: block;
@@ -28,6 +29,7 @@
     color: #1c1c1c;
     background-color: white;
     transition: background-color .5s;
+
 
     &:hover{
         color: white;
